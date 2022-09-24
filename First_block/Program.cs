@@ -20,17 +20,15 @@ void ThreeSymbolsArray(string[] array)
     {
         int len = 3;
         if (array[i].Length <= len)
-            Console.Write(array[i] + " ");
+            Console.Write(array[i] + ", ");
     }
 }
-
 
 Console.WriteLine("Input the length of the array: ");
 int a = Convert.ToInt32(Console.ReadLine());
 string[] myArray = CreateArray(a);
 ShowArray(myArray);
 
-Console.Write("Array of three symbols:");
+Console.WriteLine("Array of three symbols: ");
 ThreeSymbolsArray(myArray);
-
 Console.WriteLine();
